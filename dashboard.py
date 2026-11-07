@@ -348,9 +348,7 @@ def build_food_bars(foods, category):
 
 
 def render_dashboard():
-    heading, refresh = st.columns([4, 1])
-    heading.title("Kitchen waste")
-    refresh.button("Refresh", use_container_width=True)
+    st.title("Kitchen waste")
 
     now = pd.Timestamp.now(tz="UTC")
     try:
